@@ -1,0 +1,6 @@
+- use browser info to find out what kind of people to target (most people using IE -- clear indication that they aren't tech savvy)
+- no one saw the page more than once
+- about 30% of people were non-English speaking (kinda large)
+- 85% of the people who viewed the jacket were male -- maybe target using masculine language?
+- almost 65% of the people engaged with the page were millenials
+

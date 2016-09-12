@@ -15,17 +15,19 @@ parameters = {"kernel":("linear", "rbf"), "C":[1,10]}
 svr = svm.SVC()
 clf = grid_search.GridSearchCV(svr, parameters)
 clf.fit(iris.data, iris.target)
-#
-# In this and the following exercises, you'll be adding train test splits to the data
-# to see how it changes the performance of each classifier
-#
-# The code provided will load the Titanic dataset like you did in project 0, then train
-# a decision tree (the method you used in your project) and a Bayesian classifier (as
-# discussed in the introduction videos). You don't need to worry about how these work for
-# now. 
-#
-# What you do need to do is import a train/test split, train the classifiers on the
-# training data, and store the resulting accuracy scores in the dictionary provided.
+
+"""
+In this and the following exercises, you'll be adding train test splits to the data
+to see how it changes the performance of each classifier
+
+The code provided will load the Titanic dataset like you did in project 0, then train
+a decision tree (the method you used in your project) and a Bayesian classifier (as
+discussed in the introduction videos). You don't need to worry about how these work for
+now. 
+
+What you do need to do is import a train/test split, train the classifiers on the
+training data, and store the resulting accuracy scores in the dictionary provided.
+"""
 
 import numpy as np
 import pandas as pd
@@ -65,12 +67,12 @@ answer = {
  "Naive Bayes Score": naive_bayes_score,
  "Decision Tree Score": decision_tree_score
 }
-# In this exercise, we'll use the Titanic dataset as before, train two classifiers and
-# look at their confusion matrices. Your job is to create a train/test split in the data
-# and report the results in the dictionary at the bottom.
 
-import numpy as np
-import pandas as pd
+"""
+In this exercise, we'll use the Titanic dataset as before, train two classifiers and
+look at their confusion matrices. Your job is to create a train/test split in the data
+and report the results in the dictionary at the bottom.
+"""
 
 # Load the dataset
 from sklearn import datasets
